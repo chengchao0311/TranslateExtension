@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TodayViewController : UIViewController
+@interface TodayViewController : UIViewController<NSURLConnectionDelegate, UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *textFiled;
 
 @end

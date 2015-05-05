@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>TranslateE.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>TranslateExtension.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>62C40DF71AF7C69500296596</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>62C40E0B1AF7C6D100296596</key>
 		<dict>
 			<key>primary</key>
 			<true/>
