@@ -124,8 +124,13 @@
     
     resultLabel = [[UILabel alloc] initWithFrame:CGRectMake(32, self.textFiled.frame.origin.y + self.textFiled.frame.size.height + 10 + 44 + 2 + 2 + 44 + 20 + 44, 100, 44)];
     [resultLabel setTextColor:[UIColor whiteColor]];
-
+    [resultLabel setHidden:YES];
+    
+    self.ac = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
+    self.ac.frame = resultLabel.frame;
+    [self.ac setHidden:YES];
     [self.view addSubview:resultLabel];
+    [self.view addSubview:self.ac];
 
 }
 
@@ -150,7 +155,8 @@
 
 - (void)done{
     string = @"";
-    
+    [self.ac setHidden:NO];
+    [self.ac startAnimating];
     NSString * urlString = [NSString stringWithFormat:@"http://fanyi.youdao.com/openapi.do?keyfrom=Alfred&key=1963786550&type=data&doctype=json&version=1.1&q=%@", self.textFiled.text];
     NSURL * url = [NSURL URLWithString:urlString];
     NSURLRequest * request = [[NSURLRequest alloc] initWithURL:url];
@@ -166,6 +172,8 @@
 }
 
 -(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    [self.ac setHidden:YES];
+    [resultLabel setHidden:NO];
     NSError * error;
     NSDictionary * dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
     NSLog(@"%@", dict);

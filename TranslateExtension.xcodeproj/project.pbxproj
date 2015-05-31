@@ -19,6 +19,7 @@
 		62C40E171AF7C6D100296596 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62C40E161AF7C6D100296596 /* MainInterface.storyboard */; };
 		62C40E1A1AF7C6D100296596 /* TranslateE.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 62C40E0C1AF7C6D100296596 /* TranslateE.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		62C40E211AF7CE8300296596 /* UIView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C40E201AF7CE8300296596 /* UIView+Addition.m */; };
+		62E54FDA1AFB4E270069FCA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62C40DEA1AF7C69500296596 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -269,7 +270,6 @@
 				TargetAttributes = {
 					62C40DDE1AF7C69500296596 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 7F8MAXWY32;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -282,7 +282,6 @@
 					};
 					62C40E0B1AF7C6D100296596 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 7F8MAXWY32;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -354,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62E54FDA1AFB4E270069FCA6 /* ViewController.m in Sources */,
 				62C40DFF1AF7C69500296596 /* TranslateExtensionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -475,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -488,8 +488,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: 灼 陈 (N2E4EABWGE)";
 				INFOPLIST_FILE = TranslateExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7b469390-4a3d-4b84-9ad7-3fb03284fbed";
 			};
 			name = Debug;
 		};
@@ -499,8 +501,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: 灼 陈 (N2E4EABWGE)";
 				INFOPLIST_FILE = TranslateExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7b469390-4a3d-4b84-9ad7-3fb03284fbed";
 			};
 			name = Release;
 		};
@@ -551,7 +555,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "7b469390-4a3d-4b84-9ad7-3fb03284fbed";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -565,7 +569,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "7b469390-4a3d-4b84-9ad7-3fb03284fbed";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

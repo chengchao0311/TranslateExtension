@@ -10,5 +10,5 @@
 
 @interface TodayViewController : UIViewController<NSURLConnectionDelegate, UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *textFiled;
-
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView * ac;
 @end
